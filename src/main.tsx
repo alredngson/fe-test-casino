@@ -6,14 +6,15 @@ import ThreeBarIcon from "./assets/svg_icons/3BAR.svg";
 import Fun88Icon from "./assets/logos/F1M5_Logo.webp";
 import UserHeadIcon from "./assets/svg_icons/userhead.svg";
 import WalletIcon from "./assets/svg_icons/wallet.svg";
+import CarouselBanner from "./assets/Frame 18.webp";
 
 import "./styles/style.css";
 
 const App = (): ReactElement => (
   <>
     <div id="app">
-      <div className="container-fluid fixed-top">
-        <div id="top-nav" className="bg-light py-2">
+      <div className="container-fluid py-3">
+        <div id="top-nav" className="bg-light">
           <div className="row text-center flex-nowrap">
             <div className="col d-flex flex-row">
               <div>
@@ -34,6 +35,31 @@ const App = (): ReactElement => (
               <div className="d-flex align-items-center">
                 <img src={WalletIcon} alt="Wallet Icon" className="mb-1" />
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container-fluid px-3">
+        <div
+          id="carousel-banner"
+          className="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img
+                src={CarouselBanner}
+                className="d-block w-100"
+                alt="Banner"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src={CarouselBanner}
+                className="d-block w-100"
+                alt="Banner"
+              />
             </div>
           </div>
         </div>
