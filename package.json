@@ -1,0 +1,53 @@
+{
+    "name": "FE Test Casino",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "coding test",
+    "main": "index.html",
+    "scripts": {
+        "start": "parcel index.html",
+        "build": "parcel build index.html",
+        "format-lint": "prettier --config ./.prettierrc src --write && eslint src --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:alredngson/foo.git"
+    },
+    "author": "Alfred Tingson",
+    "license": "ISC",
+    "dependencies": {
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-router-dom": "^6.27.0"
+    },
+    "devDependencies": {
+        "@parcel/config-default": "^2.12.0",
+        "@parcel/transformer-typescript-tsc": "^2.12.0",
+        "@types/node": "^18.19.64",
+        "@types/react": "^18.3.12",
+        "@types/react-dom": "^18.3.1",
+        "@typescript-eslint/eslint-plugin": "^5.62.0",
+        "dotenv-webpack": "^8.1.0",
+        "eslint": "^8.57.1",
+        "eslint-config-prettier": "^8.10.0",
+        "eslint-config-standard-with-typescript": "^34.0.1",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-n": "^15.7.0",
+        "eslint-plugin-promise": "^6.6.0",
+        "parcel-bundler": "^1.12.5",
+        "prettier": "^2.8.8",
+        "typescript": "^5.6.3"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
