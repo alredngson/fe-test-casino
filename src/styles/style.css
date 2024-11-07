@@ -7,9 +7,17 @@ body {
 #root {
   height: 100%;
 }
+#app {
+  height: 100%;
+}
+
+.wallet-label {
+  color: rgb(8, 164, 252);
+  border-right: 0.1em solid rgb(8, 164, 252);
+}
 
 @media (max-width: 576px) {
-  .nav-icon-label {
+  .icon-label {
     font-size: 0.75em;
   }
 }
