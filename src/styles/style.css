@@ -11,19 +11,30 @@ body {
   height: 100%;
 }
 
-.wallet-label {
+#wallet-label {
   color: rgb(8, 164, 252);
   border-right: 0.1em solid rgb(8, 164, 252);
+}
+
+#notif-text {
+  color: rgb(8, 164, 252);
+  font-size: 0.75em;
+}
+
+#search-icon-div {
+  border-right: 0.05em solid grey;
 }
 
 @media (max-width: 576px) {
   .icon-label {
     font-size: 0.75em;
+    color: grey;
   }
 }
 
 @media (max-width: 375px) {
-  .nav-icon-label {
+  .icon-label {
     font-size: 0.65em;
+    color: grey;
   }
 }
