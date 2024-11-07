@@ -8,8 +8,14 @@ body {
   height: 100%;
 }
 
-@media (min-width: 576px) {
-  /* .box {
-    max-width: 35rem;
-  } */
+@media (max-width: 576px) {
+  .nav-icon-label {
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav-icon-label {
+    font-size: 0.65em;
+  }
 }
