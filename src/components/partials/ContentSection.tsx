@@ -1,6 +1,6 @@
 import React, { type ReactElement, useState, useEffect } from "react";
 
-import { games, providers } from "../utils/data";
+import { games, providers } from "../../utils/data";
 
 interface Game {
   id: string;

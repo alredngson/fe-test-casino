@@ -5,7 +5,7 @@ import {
   Fun88Icon,
   UserHeadIcon,
   WalletIcon
-} from "../utils/icons";
+} from "../../utils/icons";
 
 const TopNav = (): ReactElement => (
   <>

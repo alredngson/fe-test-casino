@@ -7,7 +7,7 @@ import {
   SlotMachineIcon,
   DealerIcon,
   JackpotIcon
-} from "../utils/icons";
+} from "../../utils/icons";
 
 const MidNav = (): ReactElement => (
   <>

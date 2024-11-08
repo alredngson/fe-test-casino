@@ -1,6 +1,6 @@
 import React, { type ReactElement } from "react";
 
-import { BellIcon } from "../utils/icons";
+import { BellIcon } from "../../utils/icons";
 
 const NotifText = (): ReactElement => (
   <>

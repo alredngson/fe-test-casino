@@ -6,7 +6,7 @@ import {
   InviteIcon,
   LiveIcon,
   CashierIcon
-} from "../utils/icons";
+} from "../../utils/icons";
 
 const BottomNav = (): ReactElement => (
   <>
