@@ -18,15 +18,16 @@ import FavoritesIcon from "./assets/svg_icons/FAVE.svg";
 import InviteIcon from "./assets/svg_icons/INVITE.svg";
 import LiveIcon from "./assets/svg_icons/LIVE.svg";
 import CashierIcon from "./assets/svg_icons/CASHIER.svg";
+import BadWolfIcon from "./assets/game_icons/Group 72.webp";
 
 import "./styles/style.css";
 
 const App = (): ReactElement => (
   <>
-    <div id="app">
+    <div id="app" className="p-1">
       {/* top navbar */}
-      <div className="container-fluid py-3">
-        <div id="top-nav" className="bg-light">
+      <div className="container-fluid">
+        <div id="top-nav">
           <div className="row text-center flex-nowrap">
             <div className="col d-flex flex-row">
               <div>
@@ -56,7 +57,7 @@ const App = (): ReactElement => (
       </div>
 
       {/* banner */}
-      <div className="container-fluid px-3 py-1">
+      <div className="container-fluid">
         <div
           id="carousel-banner"
           className="carousel slide"
@@ -82,7 +83,7 @@ const App = (): ReactElement => (
       </div>
 
       {/* notif text */}
-      <div className="container-fluid pt-1">
+      <div className="container-fluid">
         <div id="notif-text" className="bg-light">
           <div className="row text-center flex-nowrap">
             <div className="col d-flex flex-row align-items-center">
@@ -98,8 +99,8 @@ const App = (): ReactElement => (
       </div>
 
       {/* mid nav */}
-      <div className="container-fluid py-1">
-        <div id="middle-nav" className="bg-light py-2">
+      <div className="container-fluid">
+        <div id="middle-nav" className="py-1">
           <div className="row text-center flex-nowrap">
             <div
               id="search-icon-div"
@@ -134,9 +135,33 @@ const App = (): ReactElement => (
         </div>
       </div>
 
+      {/* content-section */}
+      <div className="container-fluid">
+        <div className="row row-cols-4">
+          <div className="col p-1">
+            <img src={BadWolfIcon} className="card-img-top" alt="Game Icon" />
+          </div>
+          <div className="col p-1">
+            <img src={BadWolfIcon} className="card-img-top" alt="Game Icon" />
+          </div>
+          <div className="col p-1">
+            <img src={BadWolfIcon} className="card-img-top" alt="Game Icon" />
+          </div>
+          <div className="col p-1">
+            <img src={BadWolfIcon} className="card-img-top" alt="Game Icon" />
+          </div>
+          <div className="col p-1">
+            <img src={BadWolfIcon} className="card-img-top" alt="Game Icon" />
+          </div>
+          <div className="col p-1">
+            <img src={BadWolfIcon} className="card-img-top" alt="Game Icon" />
+          </div>
+        </div>
+      </div>
+
       {/* bottom nav */}
-      <div className="container-fluid fixed-bottom">
-        <div id="bottom-nav" className="bg-light py-2">
+      <div className="container-fluid">
+        <div id="bottom-nav" className="bg-light">
           <div className="row text-center flex-nowrap">
             <div className="col d-flex flex-column align-items-center">
               <img src={SportsIcon} alt="Sports Icon" />

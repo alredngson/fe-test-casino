@@ -1,16 +1,3 @@
-html {
-  height: 100vh;
-}
-body {
-  height: 100%;
-}
-#root {
-  height: 100%;
-}
-#app {
-  height: 100%;
-}
-
 #wallet-label {
   color: rgb(8, 164, 252);
   border-right: 0.1em solid rgb(8, 164, 252);
