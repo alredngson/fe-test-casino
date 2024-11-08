@@ -21,7 +21,9 @@
 
 @media (max-width: 375px) {
   .icon-label {
-    font-size: 0.65em;
-    color: grey;
+    font-size: 0.5em;
+  }
+  #notif-text {
+    font-size: 0.55em;
   }
 }

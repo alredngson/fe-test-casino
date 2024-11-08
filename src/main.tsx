@@ -14,13 +14,27 @@ import "./styles/style.css";
 
 const App = (): ReactElement => (
   <>
-    <div id="app" className="p-1">
-      <TopNav />
-      <CarouselBanner />
-      <NotifText />
-      <MidNav />
-      <ContentSection />
-      <BottomNav />
+    <div id="app" className="d-flex flex-column min-vh-100 p-1">
+      <div className="row row-cols-1">
+        <div className="col py-1">
+          <TopNav />
+        </div>
+        <div className="col py-1">
+          <CarouselBanner />
+        </div>
+        <div className="col py-1">
+          <NotifText />
+        </div>
+        <div className="col">
+          <MidNav />
+        </div>
+        <div className="col">
+          <ContentSection />
+        </div>
+      </div>
+      <div className="mt-auto">
+        <BottomNav />
+      </div>
     </div>
   </>
 );
