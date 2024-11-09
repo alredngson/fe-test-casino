@@ -1,13 +1,14 @@
 import React, { type FC } from 'react'
-
 import { type Provider } from '../../utils/hooks/useFetchProviders'
 
 interface ProviderDrawerProps {
   providerData?: Provider[]
+  onProviderClick: (providerName: string) => void
 }
 
 const ProviderDrawer: FC<ProviderDrawerProps> = ({
-  providerData
+  providerData,
+  onProviderClick
 }: ProviderDrawerProps) => {
   return (
     <>
@@ -35,7 +36,13 @@ const ProviderDrawer: FC<ProviderDrawerProps> = ({
         <div className="offcanvas-body">
           <div className="row row-cols-2 g-2">
             {providerData?.map((provider) => (
-              <div key={provider.id} className="col">
+              <div
+                key={provider.id}
+                className="col"
+                onClick={() => { onProviderClick(provider.name) }}
+                data-bs-dismiss="offcanvas"
+                role="button"
+              >
                 <div className="card p-2 shadow-sm h-100 rounded-3 border d-flex justify-content-center align-items-center">
                   <img
                     src={provider.img}

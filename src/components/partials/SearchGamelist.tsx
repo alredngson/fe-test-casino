@@ -15,6 +15,10 @@ const SearchGameList = (): ReactElement => {
     setQuery(event.target.value)
   }
 
+  const handleProviderClick = (providerName: string) => {
+    setQuery(providerName)
+  }
+
   useEffect(() => {
     const handler = setTimeout(() => {
       setDebouncedQuery(query)
@@ -45,7 +49,10 @@ const SearchGameList = (): ReactElement => {
         </button>
       </div>
       {loading ? <GameListSkeleton /> : <GameList gameData={gameData} />}
-      <ProviderDrawer providerData={providerData} />
+      <ProviderDrawer
+        providerData={providerData}
+        onProviderClick={handleProviderClick}
+      />
     </>
   )
 }
