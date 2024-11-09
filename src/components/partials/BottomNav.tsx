@@ -50,7 +50,9 @@ const BottomNav = (): ReactElement => {
               />
               <div
                 className="text-nowrap icon-label"
-                style={{ color: activeNav === "/favorites" ? "#00A6FF" : "" }}
+                style={{
+                  color: activeNav === "/favorites" ? "#00A6FF" : "grey"
+                }}
               >
                 FAVORITES
               </div>

@@ -9,7 +9,6 @@ import { Start } from "./components/pages";
 
 import "./styles/style.css";
 
-// react-router
 const router = createBrowserRouter([
   {
     path: "/",

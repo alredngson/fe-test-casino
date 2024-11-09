@@ -48,7 +48,7 @@ const MidNav = (): ReactElement => {
               <div
                 id="search-icon-label"
                 className="text-nowrap icon-label"
-                style={{ color: activeNav === "/search" ? "#00A6FF" : "" }}
+                style={{ color: activeNav === "/search" ? "#00A6FF" : "grey" }}
               >
                 SEARCH
               </div>
@@ -73,7 +73,7 @@ const MidNav = (): ReactElement => {
               />
               <div
                 className="text-nowrap icon-label"
-                style={{ color: activeNav === "/start" ? "#00A6FF" : "" }}
+                style={{ color: activeNav === "/start" ? "#00A6FF" : "grey" }}
               >
                 START
               </div>
@@ -98,7 +98,7 @@ const MidNav = (): ReactElement => {
               />
               <div
                 className="text-nowrap icon-label"
-                style={{ color: activeNav === "/new" ? "#00A6FF" : "" }}
+                style={{ color: activeNav === "/new" ? "#00A6FF" : "grey" }}
               >
                 NEW
               </div>
@@ -122,7 +122,7 @@ const MidNav = (): ReactElement => {
               />
               <div
                 className="text-nowrap icon-label"
-                style={{ color: activeNav === "/slots" ? "#00A6FF" : "" }}
+                style={{ color: activeNav === "/slots" ? "#00A6FF" : "grey" }}
               >
                 SLOTS
               </div>
@@ -147,7 +147,7 @@ const MidNav = (): ReactElement => {
               />
               <div
                 className="text-nowrap icon-label"
-                style={{ color: activeNav === "/live" ? "#00A6FF" : "" }}
+                style={{ color: activeNav === "/live" ? "#00A6FF" : "grey" }}
               >
                 LIVE
               </div>
@@ -171,7 +171,7 @@ const MidNav = (): ReactElement => {
               />
               <div
                 className="text-nowrap icon-label"
-                style={{ color: activeNav === "/jackpot" ? "#00A6FF" : "" }}
+                style={{ color: activeNav === "/jackpot" ? "#00A6FF" : "grey" }}
               >
                 JACKPOT
               </div>
