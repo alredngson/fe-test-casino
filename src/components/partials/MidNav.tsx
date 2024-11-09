@@ -1,5 +1,5 @@
-import React, { type ReactElement, useState, useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import React, { type ReactElement, useState, useEffect } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 
 import {
   SearchIcon,
@@ -8,19 +8,19 @@ import {
   SlotMachineIcon,
   DealerIcon,
   JackpotIcon
-} from "../../utils/icons";
+} from '../../utils/icons'
 
 const MidNav = (): ReactElement => {
-  const [activeNav, setActiveNav] = useState<string>("");
-  const location = useLocation();
+  const [activeNav, setActiveNav] = useState<string>('')
+  const location = useLocation()
 
   const handleNavClick = (iconName: string) => {
-    setActiveNav(iconName);
-  };
+    setActiveNav(iconName)
+  }
 
   useEffect(() => {
-    setActiveNav(location.pathname);
-  }, [location.pathname]);
+    setActiveNav(location.pathname)
+  }, [location.pathname])
 
   return (
     <>
@@ -30,9 +30,9 @@ const MidNav = (): ReactElement => {
             <NavLink
               id="search-icon-div"
               to="/search"
-              onClick={() => handleNavClick("/search")}
+              onClick={() => { handleNavClick('/search') }}
               className={`col d-flex flex-column align-items-center text-decoration-none ${
-                activeNav === "/search" ? "active" : ""
+                activeNav === '/search' ? 'active' : ''
               }`}
             >
               <img
@@ -40,24 +40,24 @@ const MidNav = (): ReactElement => {
                 alt="Search Icon"
                 style={{
                   filter:
-                    activeNav === "/search"
-                      ? "invert(33%) sepia(80%) saturate(2599%) hue-rotate(183deg) brightness(97%) contrast(104%)"
-                      : ""
+                    activeNav === '/search'
+                      ? 'invert(33%) sepia(80%) saturate(2599%) hue-rotate(183deg) brightness(97%) contrast(104%)'
+                      : ''
                 }}
               />
               <div
                 id="search-icon-label"
                 className="text-nowrap icon-label"
-                style={{ color: activeNav === "/search" ? "#00A6FF" : "grey" }}
+                style={{ color: activeNav === '/search' ? '#00A6FF' : 'grey' }}
               >
                 SEARCH
               </div>
             </NavLink>
             <NavLink
               to="/start"
-              onClick={() => handleNavClick("/start")}
+              onClick={() => { handleNavClick('/start') }}
               className={`col d-flex flex-column align-items-center text-decoration-none ${
-                activeNav === "/start" ? "active" : ""
+                activeNav === '/start' ? 'active' : ''
               }`}
             >
               <img
@@ -66,14 +66,14 @@ const MidNav = (): ReactElement => {
                 className="mb-1"
                 style={{
                   filter:
-                    activeNav === "/start"
-                      ? "invert(33%) sepia(80%) saturate(2599%) hue-rotate(183deg) brightness(97%) contrast(104%)"
-                      : ""
+                    activeNav === '/start'
+                      ? 'invert(33%) sepia(80%) saturate(2599%) hue-rotate(183deg) brightness(97%) contrast(104%)'
+                      : ''
                 }}
               />
               <div
                 className="text-nowrap icon-label"
-                style={{ color: activeNav === "/start" ? "#00A6FF" : "grey" }}
+                style={{ color: activeNav === '/start' ? '#00A6FF' : 'grey' }}
               >
                 START
               </div>
@@ -84,9 +84,9 @@ const MidNav = (): ReactElement => {
             </div>
             <NavLink
               to="/slots"
-              onClick={() => handleNavClick("/slots")}
+              onClick={() => { handleNavClick('/slots') }}
               className={`col d-flex flex-column align-items-center text-decoration-none ${
-                activeNav === "/slots" ? "active" : ""
+                activeNav === '/slots' ? 'active' : ''
               }`}
             >
               <img
@@ -94,23 +94,23 @@ const MidNav = (): ReactElement => {
                 alt="Slot Icon"
                 style={{
                   filter:
-                    activeNav === "/slots"
-                      ? "invert(33%) sepia(80%) saturate(2599%) hue-rotate(183deg) brightness(97%) contrast(104%)"
-                      : ""
+                    activeNav === '/slots'
+                      ? 'invert(33%) sepia(80%) saturate(2599%) hue-rotate(183deg) brightness(97%) contrast(104%)'
+                      : ''
                 }}
               />
               <div
                 className="text-nowrap icon-label"
-                style={{ color: activeNav === "/slots" ? "#00A6FF" : "grey" }}
+                style={{ color: activeNav === '/slots' ? '#00A6FF' : 'grey' }}
               >
                 SLOTS
               </div>
             </NavLink>
             <NavLink
               to="/live"
-              onClick={() => handleNavClick("/live")}
+              onClick={() => { handleNavClick('/live') }}
               className={`col d-flex flex-column align-items-center text-decoration-none ${
-                activeNav === "/live" ? "active" : ""
+                activeNav === '/live' ? 'active' : ''
               }`}
             >
               <img
@@ -119,23 +119,23 @@ const MidNav = (): ReactElement => {
                 className="mb-1"
                 style={{
                   filter:
-                    activeNav === "/live"
-                      ? "invert(33%) sepia(80%) saturate(2599%) hue-rotate(183deg) brightness(97%) contrast(104%)"
-                      : ""
+                    activeNav === '/live'
+                      ? 'invert(33%) sepia(80%) saturate(2599%) hue-rotate(183deg) brightness(97%) contrast(104%)'
+                      : ''
                 }}
               />
               <div
                 className="text-nowrap icon-label"
-                style={{ color: activeNav === "/live" ? "#00A6FF" : "grey" }}
+                style={{ color: activeNav === '/live' ? '#00A6FF' : 'grey' }}
               >
                 LIVE
               </div>
             </NavLink>
             <NavLink
               to="/jackpot"
-              onClick={() => handleNavClick("/jackpot")}
+              onClick={() => { handleNavClick('/jackpot') }}
               className={`col d-flex flex-column align-items-center text-decoration-none ${
-                activeNav === "/jackpot" ? "active" : ""
+                activeNav === '/jackpot' ? 'active' : ''
               }`}
             >
               <img
@@ -143,14 +143,14 @@ const MidNav = (): ReactElement => {
                 alt="Jackpot Icon"
                 style={{
                   filter:
-                    activeNav === "/jackpot"
-                      ? "invert(33%) sepia(80%) saturate(2599%) hue-rotate(183deg) brightness(97%) contrast(104%)"
-                      : ""
+                    activeNav === '/jackpot'
+                      ? 'invert(33%) sepia(80%) saturate(2599%) hue-rotate(183deg) brightness(97%) contrast(104%)'
+                      : ''
                 }}
               />
               <div
                 className="text-nowrap icon-label"
-                style={{ color: activeNav === "/jackpot" ? "#00A6FF" : "grey" }}
+                style={{ color: activeNav === '/jackpot' ? '#00A6FF' : 'grey' }}
               >
                 JACKPOT
               </div>
@@ -159,7 +159,7 @@ const MidNav = (): ReactElement => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default MidNav;
+export default MidNav

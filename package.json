@@ -7,7 +7,7 @@
     "scripts": {
         "start": "parcel index.html",
         "build": "parcel build index.html",
-        "format-lint": "prettier --config ./.prettierrc src --write && eslint src --fix"
+        "format-lint": "prettier --config ./.prettierrc src --write && eslint src/**/*.{ts,tsx} --config eslintrc.json --fix"
     },
     "repository": {
         "type": "git",

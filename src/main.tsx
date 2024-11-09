@@ -1,24 +1,20 @@
-import { createRoot } from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Navigate
-} from "react-router-dom";
+import { createRoot } from 'react-dom/client'
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 
-import { Start } from "./components/pages";
+import { Start } from './components/pages'
 
-import "./styles/style.css";
+import './styles/style.css'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Navigate replace to="/start" />
   },
   {
-    path: "/start",
+    path: '/start',
     element: <Start />
   }
-]);
+])
 
-const root = createRoot(document.getElementById("root") as HTMLElement);
-root.render(<RouterProvider router={router} />);
+const root = createRoot(document.getElementById('root') as HTMLElement)
+root.render(<RouterProvider router={router} />)

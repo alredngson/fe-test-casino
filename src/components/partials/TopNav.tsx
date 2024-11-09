@@ -1,11 +1,11 @@
-import React, { type ReactElement } from "react";
+import React, { type ReactElement } from 'react'
 
 import {
   ThreeBarIcon,
   Fun88Icon,
   UserHeadIcon,
   WalletIcon
-} from "../../utils/icons";
+} from '../../utils/icons'
 
 const TopNav = (): ReactElement => (
   <>
@@ -39,6 +39,6 @@ const TopNav = (): ReactElement => (
       </div>
     </div>
   </>
-);
+)
 
-export default TopNav;
+export default TopNav

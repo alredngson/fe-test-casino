@@ -1,15 +1,15 @@
-import React, { type FC } from "react";
+import React, { type FC } from 'react'
 
-import useFetchGames from "../../utils/hooks/useFetchGames";
+import useFetchGames from '../../utils/hooks/useFetchGames'
 
 interface ContentSectionSectionProps {
-  category: string;
+  category: string
 }
 
 const ContentSection: FC<ContentSectionSectionProps> = ({
   category
 }: ContentSectionSectionProps) => {
-  const { gameData, loading } = useFetchGames(category);
+  const { gameData, loading } = useFetchGames(category)
 
   if (loading) {
     return (
@@ -20,14 +20,14 @@ const ContentSection: FC<ContentSectionSectionProps> = ({
               <div className="placeholder-glow">
                 <div
                   className="placeholder col-12 rounded"
-                  style={{ height: "75px" }}
+                  style={{ height: '75px' }}
                 ></div>
               </div>
             </div>
           ))}
         </div>
       </div>
-    );
+    )
   }
 
   return (
@@ -44,7 +44,7 @@ const ContentSection: FC<ContentSectionSectionProps> = ({
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ContentSection;
+export default ContentSection

@@ -1,6 +1,6 @@
-import React, { type ReactElement } from "react";
+import React, { type ReactElement } from 'react'
 
-import { CarouselBannerIcon } from "../..//utils/icons";
+import { CarouselBannerIcon } from '../..//utils/icons'
 
 const CarouselBanner = (): ReactElement => (
   <>
@@ -29,6 +29,6 @@ const CarouselBanner = (): ReactElement => (
       </div>
     </div>
   </>
-);
+)
 
-export default CarouselBanner;
+export default CarouselBanner

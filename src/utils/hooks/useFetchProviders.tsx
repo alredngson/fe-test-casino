@@ -1,28 +1,28 @@
-import { useState, useEffect } from "react";
-import { providers } from "../../utils/data";
+import { useState, useEffect } from 'react'
+import { providers } from '../../utils/data'
 
 interface Provider {
-  id: string;
-  name: string;
-  img: string;
+  id: string
+  name: string
+  img: string
 }
 
 const useFetchProviders = () => {
-  const [providerData, setProviderData] = useState<Provider[]>([]);
-  const [loading, setLoading] = useState<boolean>(false);
+  const [providerData, setProviderData] = useState<Provider[]>([])
+  const [loading, setLoading] = useState<boolean>(false)
 
   useEffect(() => {
     const fetchGames = async () => {
-      setLoading(true);
+      setLoading(true)
       setTimeout(() => {
-        setProviderData(providers);
-        setLoading(false);
-      }, 3000);
-    };
-    fetchGames();
-  }, []);
+        setProviderData(providers)
+        setLoading(false)
+      }, 3000)
+    }
+    fetchGames()
+  }, [])
 
-  return { providerData, loading };
-};
+  return { providerData, loading }
+}
 
-export default useFetchProviders;
+export default useFetchProviders

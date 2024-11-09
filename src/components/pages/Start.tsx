@@ -1,4 +1,4 @@
-import React, { type ReactElement } from "react";
+import React, { type ReactElement } from 'react'
 
 import {
   BottomNav,
@@ -7,7 +7,7 @@ import {
   MidNav,
   NotifText,
   TopNav
-} from "../partials";
+} from '../partials'
 
 const Start = (): ReactElement => (
   <>
@@ -34,6 +34,6 @@ const Start = (): ReactElement => (
       </div>
     </div>
   </>
-);
+)
 
-export default Start;
+export default Start
