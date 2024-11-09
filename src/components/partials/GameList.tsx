@@ -24,7 +24,9 @@ const GameList: FC<GameListProps> = ({ gameData }: GameListProps) => {
               className={`position-absolute top-0 end-0 m-1 ${
                 isFavorite(game.id) ? 'text-warning' : 'text-muted'
               }`}
-              onClick={async () => { await toggleFavorite(game) }}
+              onClick={async () => {
+                await toggleFavorite(game)
+              }}
               style={{ cursor: 'pointer' }}
             />
           </div>

@@ -1,3 +1,5 @@
 export { default as Search } from './Search'
 export { default as Start } from './Start'
 export { default as Slots } from './Slots'
+export { default as Live } from './Live'
+export { default as Jackpot } from './Jackpot'

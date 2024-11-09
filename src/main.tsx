@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 
-import { Search, Start, Slots } from './components/pages'
+import { Search, Start, Slots, Live, Jackpot } from './components/pages'
 
 import './styles/style.css'
 
@@ -21,6 +21,14 @@ const router = createBrowserRouter([
   {
     path: '/slots',
     element: <Slots />
+  },
+  {
+    path: '/live',
+    element: <Live />
+  },
+  {
+    path: '/jackpot',
+    element: <Jackpot />
   }
 ])
 

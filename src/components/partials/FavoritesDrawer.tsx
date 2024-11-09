@@ -7,7 +7,9 @@ const FavoritesDrawer: FC = () => {
   useEffect(() => {
     const drawer = document.getElementById('favoritesDrawer')
 
-    const handleOpen = async () => { await initializeFavorites() }
+    const handleOpen = async () => {
+      await initializeFavorites()
+    }
     drawer?.addEventListener('shown.bs.offcanvas', handleOpen)
 
     return () => {
