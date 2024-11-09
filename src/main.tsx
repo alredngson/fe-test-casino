@@ -3,8 +3,6 @@ import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 
 import { Search, Start, Slots, Live, Jackpot } from './components/pages'
 
-import './styles/style.css'
-
 const router = createBrowserRouter([
   {
     path: '/',

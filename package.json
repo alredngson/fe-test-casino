@@ -1,17 +1,17 @@
 {
-    "name": "FE Test Casino",
+    "name": "fe-test-casino",
     "version": "1.0.0",
     "type": "module",
     "description": "coding test",
     "main": "index.html",
     "scripts": {
         "start": "parcel index.html",
-        "build": "parcel build index.html",
+        "build": "parcel build index.html --no-minify",
         "format-lint": "prettier --config ./.prettierrc src --write && eslint src/**/*.{ts,tsx} --config eslintrc.json --fix"
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:alredngson/foo.git"
+        "url": "git@github.com:alredngson/fe-test-casino.git"
     },
     "author": "Alfred Tingson",
     "license": "ISC",
