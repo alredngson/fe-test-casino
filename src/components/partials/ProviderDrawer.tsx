@@ -39,7 +39,9 @@ const ProviderDrawer: FC<ProviderDrawerProps> = ({
               <div
                 key={provider.id}
                 className="col"
-                onClick={() => { onProviderClick(provider.name) }}
+                onClick={() => {
+                  onProviderClick(provider.name)
+                }}
                 data-bs-dismiss="offcanvas"
                 role="button"
               >

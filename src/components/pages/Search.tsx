@@ -6,7 +6,8 @@ import {
   MidNav,
   NotifText,
   TopNav,
-  SearchGameList
+  SearchGameList,
+  FavoritesDrawer
 } from '../partials'
 
 const Slots = (): ReactElement => {
@@ -29,6 +30,9 @@ const Slots = (): ReactElement => {
           <div className="col">
             <SearchGameList />
           </div>
+        </div>
+        <div>
+          <FavoritesDrawer />
         </div>
         <div className="mt-auto">
           <BottomNav />

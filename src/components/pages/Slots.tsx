@@ -7,7 +7,8 @@ import {
   NotifText,
   TopNav,
   GameList,
-  GameListSkeleton
+  GameListSkeleton,
+  FavoritesDrawer
 } from '../partials'
 
 import { useFetchGames } from '../../utils/hooks/useFetchGames'
@@ -34,6 +35,9 @@ const Slots = (): ReactElement => {
           <div className="col">
             {loading ? <GameListSkeleton /> : <GameList gameData={gameData} />}
           </div>
+        </div>
+        <div>
+          <FavoritesDrawer />
         </div>
         <div className="mt-auto">
           <BottomNav />
