@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
 import { providers } from '../data'
 
-interface Provider {
+export interface Provider {
   id: string
   name: string
   img: string
 }
 
-const useFetchProviders = () => {
+export const useFetchProviders = () => {
   const [providerData, setProviderData] = useState<Provider[]>([])
   const [loading, setLoading] = useState<boolean>(false)
 
@@ -17,12 +17,10 @@ const useFetchProviders = () => {
       setTimeout(() => {
         setProviderData(providers)
         setLoading(false)
-      }, 3000)
+      }, 0)
     }
     fetchGames()
   }, [])
 
   return { providerData, loading }
 }
-
-export default useFetchProviders
