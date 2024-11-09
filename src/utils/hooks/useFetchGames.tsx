@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { games } from '../../utils/data'
 
-interface Game {
+export interface Game {
   id: string
   name: string
   img: string
@@ -9,7 +9,7 @@ interface Game {
   tags: string[]
 }
 
-const useFetchGames = (filterTag?: string) => {
+export const useFetchGames = (filterTag?: string) => {
   const [gameData, setGameData] = useState<Game[]>([])
   const [loading, setLoading] = useState<boolean>(false)
 
@@ -34,5 +34,3 @@ const useFetchGames = (filterTag?: string) => {
 
   return { gameData, loading }
 }
-
-export default useFetchGames

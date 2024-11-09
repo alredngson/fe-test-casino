@@ -30,7 +30,9 @@ const MidNav = (): ReactElement => {
             <NavLink
               id="search-icon-div"
               to="/search"
-              onClick={() => { handleNavClick('/search') }}
+              onClick={() => {
+                handleNavClick('/search')
+              }}
               className={`col d-flex flex-column align-items-center text-decoration-none ${
                 activeNav === '/search' ? 'active' : ''
               }`}
@@ -55,7 +57,9 @@ const MidNav = (): ReactElement => {
             </NavLink>
             <NavLink
               to="/start"
-              onClick={() => { handleNavClick('/start') }}
+              onClick={() => {
+                handleNavClick('/start')
+              }}
               className={`col d-flex flex-column align-items-center text-decoration-none ${
                 activeNav === '/start' ? 'active' : ''
               }`}
@@ -84,7 +88,9 @@ const MidNav = (): ReactElement => {
             </div>
             <NavLink
               to="/slots"
-              onClick={() => { handleNavClick('/slots') }}
+              onClick={() => {
+                handleNavClick('/slots')
+              }}
               className={`col d-flex flex-column align-items-center text-decoration-none ${
                 activeNav === '/slots' ? 'active' : ''
               }`}
@@ -108,7 +114,9 @@ const MidNav = (): ReactElement => {
             </NavLink>
             <NavLink
               to="/live"
-              onClick={() => { handleNavClick('/live') }}
+              onClick={() => {
+                handleNavClick('/live')
+              }}
               className={`col d-flex flex-column align-items-center text-decoration-none ${
                 activeNav === '/live' ? 'active' : ''
               }`}
@@ -133,7 +141,9 @@ const MidNav = (): ReactElement => {
             </NavLink>
             <NavLink
               to="/jackpot"
-              onClick={() => { handleNavClick('/jackpot') }}
+              onClick={() => {
+                handleNavClick('/jackpot')
+              }}
               className={`col d-flex flex-column align-items-center text-decoration-none ${
                 activeNav === '/jackpot' ? 'active' : ''
               }`}

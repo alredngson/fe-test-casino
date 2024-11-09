@@ -12,8 +12,8 @@ import {
 
 import { useFetchGames } from '../../utils/hooks/useFetchGames'
 
-const Start = (): ReactElement => {
-  const { gameData, loading } = useFetchGames()
+const Slots = (): ReactElement => {
+  const { gameData, loading } = useFetchGames('slots')
 
   return (
     <>
@@ -43,4 +43,4 @@ const Start = (): ReactElement => {
   )
 }
 
-export default Start
+export default Slots

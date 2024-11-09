@@ -32,7 +32,9 @@ const BottomNav = (): ReactElement => {
             </div>
             <NavLink
               to="/favorites"
-              onClick={() => { handleNavClick('/favorites') }}
+              onClick={() => {
+                handleNavClick('/favorites')
+              }}
               className={`col d-flex flex-column align-items-center text-decoration-none ${
                 activeNav === '/favorites' ? 'active' : ''
               }`}
