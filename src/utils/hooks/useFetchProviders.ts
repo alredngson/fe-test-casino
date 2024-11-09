@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { providers } from '../../utils/data'
+import { providers } from '../data'
 
 interface Provider {
   id: string

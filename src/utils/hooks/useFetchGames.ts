@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { games } from '../../utils/data'
+import { games } from '../data'
 
 export interface Game {
   id: string

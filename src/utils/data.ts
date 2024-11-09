@@ -33,8 +33,8 @@ import {
 
 export const games = [
   {
-    id: 'bad-wolf',
-    name: 'Bad Wolf',
+    id: 'big-bad-wolf',
+    name: 'Big Bad Wolf',
     img: BadWolfIcon,
     provider: 'PlayTech',
     tags: ['fantasy', 'live', 'slots']
