@@ -9,18 +9,26 @@ interface Game {
   tags: string[];
 }
 
-const useFetchGames = () => {
+const useFetchGames = (filterTag?: string) => {
   const [gameData, setGameData] = useState<Game[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
 
-  useEffect(() => {
-    const fetchGames = async () => {
-      setLoading(true);
+  const fetchGames = async () => {
+    setLoading(true);
+    const filteredGames = await new Promise<Game[]>((resolve) => {
       setTimeout(() => {
-        setGameData(games);
-        setLoading(false);
+        let filtered = games;
+        if (filterTag) {
+          filtered = games.filter((game) => game.tags.includes(filterTag));
+        }
+        resolve(filtered);
       }, 3000);
-    };
+    });
+    setGameData(filteredGames);
+    setLoading(false);
+  };
+
+  useEffect(() => {
     fetchGames();
   }, []);
 

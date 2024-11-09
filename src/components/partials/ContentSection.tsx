@@ -1,9 +1,15 @@
-import React, { type ReactElement } from "react";
+import React, { type FC } from "react";
 
 import useFetchGames from "../../utils/hooks/useFetchGames";
 
-const ContentSection = (): ReactElement => {
-  const { gameData, loading } = useFetchGames();
+interface ContentSectionSectionProps {
+  category: string;
+}
+
+const ContentSection: FC<ContentSectionSectionProps> = ({
+  category
+}: ContentSectionSectionProps) => {
+  const { gameData, loading } = useFetchGames(category);
 
   if (loading) {
     return (

@@ -1,5 +1,5 @@
-import React, { type ReactElement, useState, useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import React, { type ReactElement, useState, useEffect } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 
 import {
   SportsIcon,
@@ -7,19 +7,19 @@ import {
   InviteIcon,
   LiveIcon,
   CashierIcon
-} from "../../utils/icons";
+} from '../../utils/icons'
 
 const BottomNav = (): ReactElement => {
-  const [activeNav, setActiveNav] = useState<string>("");
-  const location = useLocation();
+  const [activeNav, setActiveNav] = useState<string>('')
+  const location = useLocation()
 
   const handleNavClick = (iconName: string) => {
-    setActiveNav(iconName);
-  };
+    setActiveNav(iconName)
+  }
 
   useEffect(() => {
-    setActiveNav(location.pathname);
-  }, []);
+    setActiveNav(location.pathname)
+  }, [location.pathname])
 
   return (
     <>
@@ -32,9 +32,9 @@ const BottomNav = (): ReactElement => {
             </div>
             <NavLink
               to="/favorites"
-              onClick={() => handleNavClick("/favorites")}
+              onClick={() => handleNavClick('/favorites')}
               className={`col d-flex flex-column align-items-center text-decoration-none ${
-                activeNav === "/favorites" ? "active" : ""
+                activeNav === '/favorites' ? 'active' : ''
               }`}
             >
               <img
@@ -43,15 +43,15 @@ const BottomNav = (): ReactElement => {
                 className="mb-1"
                 style={{
                   filter:
-                    activeNav === "/favorites"
-                      ? "invert(33%) sepia(80%) saturate(2599%) hue-rotate(183deg) brightness(97%) contrast(104%)"
-                      : ""
+                    activeNav === '/favorites'
+                      ? 'invert(33%) sepia(80%) saturate(2599%) hue-rotate(183deg) brightness(97%) contrast(104%)'
+                      : ''
                 }}
               />
               <div
                 className="text-nowrap icon-label"
                 style={{
-                  color: activeNav === "/favorites" ? "#00A6FF" : "grey"
+                  color: activeNav === '/favorites' ? '#00A6FF' : 'grey'
                 }}
               >
                 FAVORITES
@@ -73,7 +73,7 @@ const BottomNav = (): ReactElement => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default BottomNav;
+export default BottomNav

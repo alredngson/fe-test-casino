@@ -20,7 +20,7 @@ const MidNav = (): ReactElement => {
 
   useEffect(() => {
     setActiveNav(location.pathname);
-  }, []);
+  }, [location.pathname]);
 
   return (
     <>
@@ -78,31 +78,10 @@ const MidNav = (): ReactElement => {
                 START
               </div>
             </NavLink>
-            <NavLink
-              to="/new"
-              onClick={() => handleNavClick("/new")}
-              className={`col d-flex flex-column align-items-center text-decoration-none ${
-                activeNav === "/new" ? "active" : ""
-              }`}
-            >
-              <img
-                src={NewIcon}
-                alt="New Icon"
-                className="mb-1"
-                style={{
-                  filter:
-                    activeNav === "/new"
-                      ? "invert(33%) sepia(80%) saturate(2599%) hue-rotate(183deg) brightness(97%) contrast(104%)"
-                      : ""
-                }}
-              />
-              <div
-                className="text-nowrap icon-label"
-                style={{ color: activeNav === "/new" ? "#00A6FF" : "grey" }}
-              >
-                NEW
-              </div>
-            </NavLink>
+            <div className="col d-flex flex-column align-items-center text-decoration-none">
+              <img src={NewIcon} alt="New Icon" className="mb-1" />
+              <div className="text-nowrap icon-label">NEW</div>
+            </div>
             <NavLink
               to="/slots"
               onClick={() => handleNavClick("/slots")}
